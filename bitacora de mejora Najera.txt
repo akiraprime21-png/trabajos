@@ -1,0 +1,16 @@
+problema detectado	clasificación	corrección recomendada
+error de conexión a base de datos	Critico	Revisar credenciales, parámetros de red y disponibilidad del servidor de BD
+Vulnerabilidad con inyecciones SQL   	critico	Implementar consultas preparadas (prepared statements) o un ORM
+	
+Inicio de sesión defectuoso	Critico	Depurar la lógica de autenticación, hash de contraseñas y manejo de sesiones.
+Roles de usuarios descontrolados 	Critico	Implementar un sistema de control de acceso basado en roles (RBAC) estricto. 
+Datos duplicados o que no se guardan	Critico	Ajustar restricciones de clave única (UNIQUE) y validar transacciones en BD
+Envió de datos no válidos	Critico	Agregar validación de inputs tanto en el cliente (frontend) como en el servidor (backend)
+Consultas lentas en base de datos   	Leve	Optimizar queries, crear índices apropiados en las tablas y revisar joins
+Falta de certificado SSL	Leve	Instalar y configurar un certificado SSL/TLS (HTTPS) en el servidor web.   
+Imágenes o archivos no cargados	Leve	Verificar rutas de almacenamiento, permisos de carpeta y límites de tamaño de subida
+Diseño no responsivo en teléfono o computadora	Funcional	Implementar media queries o un marco de trabajo de CSS para diseño adaptable
+Enlaces rotos   	Funcional		
+Auditar las URLs internas/externas y corregir los redireccionamientos o rutas.
+Incompatibilidad con el navegador	Funcional	Aplicar reglas de CSS universales (vendor prefixes) y pruebas multiplataforma. 
+Estilos CSS no válidos	Funcional	Validar y corregir sintaxis de las hojas de estilo mediante un linter de CSS.   
